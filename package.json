@@ -1,0 +1,19 @@
+{
+  "name": "stream-stats-reporter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ikeisuke/stream-stats-reporter.git"
+  },
+  "author": "Keisuke Isono",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/ikeisuke/stream-stats-reporter/issues"
+  },
+  "homepage": "https://github.com/ikeisuke/stream-stats-reporter#readme"
+}
