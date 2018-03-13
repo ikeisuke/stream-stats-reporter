@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "nyc mocha",
+    "lint": "eslint *.js **/*.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/ikeisuke/stream-stats-reporter/issues"
   },
-  "homepage": "https://github.com/ikeisuke/stream-stats-reporter#readme"
+  "homepage": "https://github.com/ikeisuke/stream-stats-reporter#readme",
+  "devDependencies": {
+    "eslint": "^4.19.0",
+    "mocha": "^5.0.4",
+    "nyc": "^11.6.0"
+  }
 }
