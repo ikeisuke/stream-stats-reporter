@@ -3,16 +3,6 @@
 const { Readable, Writable, Transform } = require("stream");
 const NS_PER_SEC = 1e9;
 
-const mode = (() => {
-    if (global.process === undefined) {
-        return "milliseconds";
-    }
-    if (process.hrtime instanceof Function) {
-        return "nanoseconds";
-    }
-    return "milliseconds";
-})();
-
 class Stats {
     constructor() {
         this.min = 0;
@@ -136,7 +126,7 @@ const measure = {
 
 class StreamStatsReporter {
     constructor(type) {
-        this.measure = measure[type] || measure[mode];
+        this.measure = measure[type] || measure.milliseconds;
         this.results = [];
     }
 
